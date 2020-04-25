@@ -23,7 +23,7 @@
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#">Link 1</a></li>
-        <li><a href="<?php echo base_url(); ?>home/test">Link 2</a></li>
+        <li><a href="<?php echo base_url(); ?>home/contestPdf">Contest Pdf</a></li>
         <li><a href="#">Link 3</a></li>
       </ul>
       <hr class="hidden-sm hidden-md hidden-lg">
