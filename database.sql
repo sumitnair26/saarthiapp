@@ -7,7 +7,7 @@ File contains all create statement
 CREATE SCHEMA `saarthi` ;
 
 /* Contest Table contains all contest */
-CREATE TABLE `saarthi`.`contest` (
+CREATE TABLE `contest` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `contest_name` VARCHAR(100) NULL,
   `contest_pdf` VARCHAR(100) NULL,
@@ -17,7 +17,7 @@ CREATE TABLE `saarthi`.`contest` (
   PRIMARY KEY (`id`));
 
 /* contest_question Table contains Q&A */
-  CREATE TABLE `saarthi`.`contest_question` (
+  CREATE TABLE `contest_question` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `contest_id` int(11) NOT NULL,
   `question` text  DEFAULT NULL,
@@ -33,3 +33,11 @@ CREATE TABLE `saarthi`.`contest` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_contest_id` FOREIGN KEY (`contest_id`) REFERENCES `contest` (`id`)
 );
+
+/* Insert Contest */
+INSERT INTO `contest` (`contest_name`) VALUES ('First Contest');
+INSERT INTO `contest` (`contest_name`) VALUES ('Second Contest');
+INSERT INTO `contest` (`contest_name`) VALUES ('Third Contest');
+
+
+
