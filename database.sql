@@ -1,14 +1,22 @@
+/*
+File contains all create statement
+ */
 
+
+/* create database */
 CREATE SCHEMA `saarthi` ;
 
+/* Contest Table contains all contest */
 CREATE TABLE `saarthi`.`contest` (
   `id` INT NOT NULL AUTO_INCREMENT,
+  `contest_name` VARCHAR(100) NULL,
   `contest_pdf` VARCHAR(100) NULL,
   `contest_pdf_s3url` VARCHAR(500) NULL,
   `create_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `update_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`));
 
+/* contest_question Table contains Q&A */
   CREATE TABLE `saarthi`.`contest_question` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `contest_id` int(11) NOT NULL,
