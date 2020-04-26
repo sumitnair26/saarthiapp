@@ -39,5 +39,26 @@ INSERT INTO `contest` (`contest_name`) VALUES ('First Contest');
 INSERT INTO `contest` (`contest_name`) VALUES ('Second Contest');
 INSERT INTO `contest` (`contest_name`) VALUES ('Third Contest');
 
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'National Income estimates in India are prepared by', 'Planning Commission', 'Reserve Bank of India', 'Central statistical organisation', ' Indian statistical Institute', 'Central statistical organisation', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The World Largest desert is ?', 'Thar', 'Kalahari', 'Sahara', ' Sonoran', 'Kalahari', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', ' Country that has the highest in Barley Production ?', 'China', 'India', 'Russia', 'France', 'Russia', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The metal whose salts are sensitive to light is ?', 'Planning Commission', 'Reserve Bank of India', 'Central statistical organisation', ' Indian statistical Institute', 'Central statistical organisation', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The Central Rice Research Station is situated in ?', 'Chennai', 'Cuttack', 'Bangalore', 'Quilon', 'Cuttack', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'National Income estimates in India are prepared by', 'Planning Commission', 'Reserve Bank of India', 'Central statistical organisation', ' Indian statistical Institute', 'Central statistical organisation', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The World Largest desert is ?', 'Thar', 'Kalahari', 'Sahara', ' Sonoran', 'Kalahari', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', ' Country that has the highest in Barley Production ?', 'China', 'India', 'Russia', 'France', 'Russia', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The metal whose salts are sensitive to light is ?', 'Planning Commission', 'Reserve Bank of India', 'Central statistical organisation', ' Indian statistical Institute', 'Central statistical organisation', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+INSERT INTO `saarthi`.`contest_question` (`contest_id`, `question`, `option_1`, `option_2`, `option_3`, `option_4`, `correct_answer`, `description`, `option_type`) VALUES ('2', 'The Central Rice Research Station is situated in ?', 'Chennai', 'Cuttack', 'Bangalore', 'Quilon', 'Cuttack', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy', '4');
+
+
 
 

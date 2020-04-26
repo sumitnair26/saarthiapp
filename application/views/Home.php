@@ -30,7 +30,6 @@
               success: function(response){
                 // Add response in Modal body
                 $('.modal-body').html(response);
-
                 // Display Modal
                 $('#myModal').modal('show');
               }
