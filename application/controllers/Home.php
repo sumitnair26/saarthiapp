@@ -29,7 +29,9 @@ class Home extends CI_Controller {
         public function test(){
                 $this->load->view('Front_page');
         }
-
+        /**
+         * Get Contest Pdf
+         */
         public function getContestPdf() {
                 $this->Home_model->getContestPdf();
         }

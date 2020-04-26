@@ -8,6 +8,7 @@
 		<style>
 			body {
                 margin: 1em;
+                font-family: freeserif;
             }
             table, th, td {
             border: 1px solid black;
