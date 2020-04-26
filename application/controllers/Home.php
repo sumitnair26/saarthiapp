@@ -26,23 +26,6 @@ class Home extends CI_Controller {
         public function contestPdf(){
                 $this->load->view('Contest_pdf');
         }
-        /**
-         * Generate PDF
-        */
-        public function generate_pdf() {
-                ini_set('memory_limit', '256M');
-                $this->load->library('Mpdf_access');
-                ob_start();
-                $this->load->view('Contest_pdf');
-                $html = ob_get_contents();
-                ob_end_clean();
-                //create pdf file of above view -vendor_agreement.php
-                $file_data = array();
-                $contest_path = 'pdf/contest/';
-                $path=''.$contest_path.'contest_'.date('Y_m_d').'_'.rand(10,100000).'.pdf';
-                $file_data = $this->mpdf_access->write_html($path,$html);
-        }
-
         public function test(){
                 $this->load->view('Front_page');
         }

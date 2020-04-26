@@ -39,277 +39,35 @@
         </div>
         <div class="border-blue" style="height:100%">
                 <table style="width:100%">
+
+                <?php
+                if (is_array($contest)){
+                foreach($contest as $data) {
+
+                    ?>
                     <tr>
                         <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
+                        <td colspan="4"><?php echo $data['question']; ?></td>
                     </tr>
                     <tr>
                         <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
+                        <td colspan="1" class="colOneWidth"><?php echo $data['option_1']; ?></td>
+                        <td colspan="1" class="colOneWidth"><?php echo $data['option_2']; ?></td>
+                        <td colspan="1" class="colOneWidth"><?php echo $data['option_3']; ?></td>
+                        <td colspan="1" class="colOneWidth"><?php echo $data['option_4']; ?></td>
                     </tr>
                     <tr>
                         <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
+                        <td colspan="4"><?php echo $data['question']; ?></td>
                     </tr>
                     <tr>
                         <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
+                        <td colspan="4"><?php echo $data['description']; ?></td>
                     </tr>
 
                     <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="2" class="colOneWidth">Color</td>
-                        <td colspan="2" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-
-
-                    <tr>
-                        <th><?php echo "Question:" ?></th>
-                        <td colspan="4"><?php echo "Where was the Asian Wrestling Championship 2019 held?"; ?></td>
-                    </tr>
-                    <tr>
-                        <th>Options :</th>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                        <td colspan="1" class="colOneWidth">Color</td>
-                        <td colspan="1" class="colOneWidth">ssaas</td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo "Xi’an, China"; ?></td>
-                    </tr>
-                    <tr>
-                        <th><?php echo "Explanantion:"; ?></th>
-                        <td colspan="4"><?php echo "Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze Explanantion: Xi'an, China Explanation: The Asian Wrestling Championship 2019 was held in Xi'an, China from April 23 to April 28, 2019. India won 16 medals which include 1 gold, 3 silver and 4 bronze by men’s freestyle wrestlers, 3 silver and 1 bronze"; ?></td>
-                    </tr>
-
-                    <tr><th style="border: 0px solid black;"></th></tr>
-                </table>
+                <?php } } ?>
+            </table>
         </div>
     </div>
 </body>
