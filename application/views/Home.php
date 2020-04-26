@@ -12,10 +12,32 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/whatsapp.css">
     <script src="<?php echo base_url(); ?>assets/js/whatsappShare.js"></script>
     <style>
-      .body{
+      body{
         font-family: freeserif;
       }
+      li a{
+        cursor: pointer;
+      }
     </style>
+    <script>
+        $(document).ready(function(){
+          $('.contestInfo').click(function(){
+            var contestId = $(this).data('id');
+              $.ajax({
+              url: '<?php echo base_url(); ?>home/getContestPdf',
+              type: 'post',
+              data: {contestId: contestId},
+              success: function(response){
+                // Add response in Modal body
+                $('.modal-body').html(response);
+
+                // Display Modal
+                $('#myModal').modal('show');
+              }
+            });
+          });
+        });
+    </script>
 </head>
 
 <body>
@@ -31,11 +53,16 @@
       <h2>Contest</h2>
       <p>Download Saarthi for free today !</p>
       <h3>Contest Link's</h3>
-      <p>ALL Contest's</p>
+      <p>Click On Contest To Share/Download</p>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#">Link 1</a></li>
-        <li><a href="<?php echo base_url(); ?>home/contestPdf">Contest Pdf</a></li>
-        <li><a data-toggle="modal" data-target="#myModal">Share Contest</a></li>
+        <?php  if($all_contest){
+            foreach($all_contest as $contest){
+            ?>
+            <li><a data-id='<?php echo $contest['contest_id']; ?>' class='contestInfo'><?php echo $contest['contest_name']; ?></a></li>
+          <?php }
+          }else{
+              echo "No Contest Running";
+          } ?>
       </ul>
       <hr class="hidden-sm hidden-md hidden-lg">
     </div>
@@ -71,12 +98,7 @@
           <h4 class="modal-title">Share Contest</h4>
         </div>
         <div class="modal-body">
-          <p>
-          <a data-text="Your message goes here.." data-link="http://w3lessons.info" class="whatsapp w3_whatsapp_btn w3_whatsapp_btn_large">
-            <i class="fa fa-whatsapp" aria-hidden="true"></i> Share In WhatApp
-          </a>
-          <a data-text="Your message goes here.." data-link="http://w3lessons.info" class="whatsapp w3_whatsapp_btn w3_whatsapp_btn_large">Download PDF</a>
-          </p>
+          <!-- Contest Download/share comes HEre -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
