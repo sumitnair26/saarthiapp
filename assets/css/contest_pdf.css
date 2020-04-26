@@ -1,0 +1,28 @@
+    /*
+        Contest_pdf css
+    */
+    body {
+        margin: 1em;
+        font-family: freeserif;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 5px;
+    text-align: left;
+    }
+
+    .border-blue {
+        border: 5px solid blue;
+        padding:10px;
+    }
+
+    .colOneWidth {
+        width:20%
+    }
+
+    .colTwoWidth {
+        width:33.333333333%
+    }

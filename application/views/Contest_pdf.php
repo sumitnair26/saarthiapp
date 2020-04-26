@@ -4,9 +4,11 @@
         <!-- jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
         <script type="text/javascript" src="<?php echo base_url("print.min.js"); ?>"></script>
-		<style>
-			body {
+        <!-- <link href="<?php echo base_url(); ?>assets/css/contest_pdf.css" rel="stylesheet"> -->
+        <style>
+            body {
                 margin: 1em;
                 font-family: freeserif;
             }
@@ -31,20 +33,19 @@
             .colTwoWidth {
                 width:33.333333333%
             }
-		</style>
+        </style>
 	</head>
     <body>
     <div>
         <div>
             <?php  $this->load->view('Front_page'); ?>
         </div>
-        <div class="border-blue" style="height:100%">
+        <div class="border-blue" style="height:100%;">
                 <table style="width:100%">
 
-                <?php
+                 <?php
                 if (is_array($contest)){
                 foreach($contest as $data) {
-
                     ?>
                     <tr>
                         <th><?php echo "Question:" ?></th>
@@ -52,14 +53,19 @@
                     </tr>
                     <tr>
                         <th>Options :</th>
-                        <td colspan="1" class="colOneWidth"><?php echo $data['option_1']; ?></td>
-                        <td colspan="1" class="colOneWidth"><?php echo $data['option_2']; ?></td>
-                        <td colspan="1" class="colOneWidth"><?php echo $data['option_3']; ?></td>
-                        <td colspan="1" class="colOneWidth"><?php echo $data['option_4']; ?></td>
+                        <?php if($data['option_type']=='4'){ ?>
+                            <td colspan="1" class="colOneWidth"><?php echo $data['option_1']; ?></td>
+                            <td colspan="1" class="colOneWidth"><?php echo $data['option_2']; ?></td>
+                            <td colspan="1" class="colOneWidth"><?php echo $data['option_3']; ?></td>
+                            <td colspan="1" class="colOneWidth"><?php echo $data['option_4']; ?></td>
+                        <?php }elseif($data['option_type']=='2'){ ?>
+                            <td colspan="2" class="colOneWidth"><?php echo $data['option_1']; ?></td>
+                            <td colspan="2" class="colOneWidth"><?php echo $data['option_2']; ?></td>
+                        <?php } ?>
                     </tr>
                     <tr>
                         <th><?php echo "Answer:" ?></th>
-                        <td colspan="4"><?php echo $data['question']; ?></td>
+                        <td colspan="4"><?php echo $data['correct_answer']; ?></td>
                     </tr>
                     <tr>
                         <th><?php echo "Explanantion:"; ?></th>
@@ -67,8 +73,16 @@
                     </tr>
 
                     <tr><th style="border: 0px solid black;"></th></tr>
-                <?php } } ?>
+                <?php  } } ?>
             </table>
+        </div>
+        <pagebreak />
+        <div>
+            <?php  $this->load->view('Banner_page.php'); ?>
+        </div>
+        <pagebreak />
+        <div>
+            <?php  $this->load->view('End_page.php'); ?>
         </div>
     </div>
 </body>
